@@ -1,0 +1,67 @@
+.dashboard-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    background: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    animation: fadeIn 0.7s ease-in-out;
+    clip-path: polygon(0 20px, 20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+    color: var(--accent-color);
+    letter-spacing: 1px;
+}
+
+.dashboard-header .username {
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.profile-card {
+    background: var(--tertiary-bg);
+    padding: 2rem;
+    margin-top: 1rem;
+    border-left: 5px solid var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateX(10px);
+}
+
+.profile-card h2 {
+    margin-top: 0;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.profile-info strong {
+    color: var(--accent-color);
+}
+
+.days-remaining {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+    animation: glow 4s ease-in-out infinite;
+    padding: 1rem;
+}
+
+.days-remaining.expired {
+    color: #ff8a8a;
+    animation: none;
+}

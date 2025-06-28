@@ -1,0 +1,118 @@
+/* This file should be at src/pages/LoginPage.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.login-form {
+  background: var(--secondary-bg);
+  padding: 3rem 2.5rem;
+  border: 2px solid var(--border-color);
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  clip-path: polygon(0 20px, 20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-form:hover {
+    box-shadow: 0 0 15px var(--accent-color);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-form h2 {
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: var(--text-muted-color);
+}
+
+.input-group input:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--accent-color);
+  border-color: var(--button-hover-bg);
+}
+
+.login-button {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 10px);
+}
+
+.login-button:hover {
+  background-color: var(--button-hover-bg);
+  transform: scale(1.02);
+}
+
+.error-message {
+  color: #ff8a8a;
+  background-color: #5a2c2c;
+  padding: 0.75rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border-left: 3px solid #e57373;
+}
+
+.success-message {
+  color: #a5d6a7;
+  background-color: #2e7d32;
+  padding: 0.75rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--text-muted-color);
+}
+
+.footer-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

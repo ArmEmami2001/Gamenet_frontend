@@ -1,0 +1,36 @@
+.app-header {
+  background-color: var(--secondary-bg);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--border-color);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.header-logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px var(--accent-color);
+}
+
+.header-nav button {
+  background: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+}
+
+.header-nav button:hover {
+  background-color: var(--button-hover-bg);
+  transform: translateY(-2px);
+}
